@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center py-12 px-6 ">
-        <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
           {/* Left section with logo and brand name */}
           <div className="flex items-center gap-4 mb-8 lg:mb-0">
             <img src={blue} alt="blue" className="w-32 md:w-48" />
@@ -19,12 +19,12 @@ const Footer = () => {
 
           {/* Right section with links */}
           <div className="flex flex-col lg:flex-row gap-6 text-gray-600">
-            <div className="flex flex-col text-2xl uppercase font-semibold">
+            <div className="flex flex-wrap md:flex-col text-2xl uppercase font-semibold">
             {/* <h1 className="uppercase font-bold">Quick </h1> */}
-              <a href="/about" className="text-end mb-2 hover:underline hover:bluet transition-all">About Us</a>
-              <a href="/services" className="mb-2 text-end hover:underline hover:bluet transition-all">Services</a>
-              <a href="/contact" className="mb-2 hover:bluet hover:underline text-end transition-all">Contact</a>
-              <a href="/privacy-policy" className="mb-2 hover:bluet hover:underline text-end transition-all">Privacy Policy</a>
+              <a href="/about" className="w-[40%] md:w-full text-start md:text-end mb-2 hover:underline hover:bluet transition-all">About Us</a>
+              <a href="/services" className="w-[40%] md:w-full mb-2 text-start md:text-end hover:underline hover:bluet transition-all">Services</a>
+              <a href="/contact" className="w-[40%] md:w-full mb-2 hover:bluet hover:underline text-start md:text-end transition-all">Contact</a>
+              <a href="/privacy-policy" className="w-[40%] md:w-full mb-2 hover:bluet hover:underline text-start md:text-end transition-all">Privacy Policy</a>
             </div>
             {/* <div className="flex flex-col">
               <a href="mailto:contact@earthfarers.com" className="mb-2 hover:text-blue-600 transition-all">Email: contact@earthfarers.com</a>

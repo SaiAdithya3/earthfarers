@@ -27,7 +27,7 @@ const KeyServices = () => {
       title: "Market Analysis & Updates",
       description:
         "Our team provides regular, insightful market updates to keep you informed.",
-      borderClass: "md:border-t md:border-r md:border-b-none md:rounded-tr-3xl",
+      borderClass: "md:border-t md:border-r md:border-b-0 border-b md:rounded-tr-3xl",
     },
     {
       icon: <FaCertificate className="bluet text-5xl mb-4" />,
