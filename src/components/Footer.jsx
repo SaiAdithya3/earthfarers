@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row justify-between items-center">
           {/* Left section with logo and brand name */}
           <div className="flex items-center gap-4 mb-8 lg:mb-0">
-            <img src={blue} alt="blue" className="w-48" />
-            <div className="text-6xl bluet">
+            <img src={blue} alt="blue" className="w-32 md:w-48" />
+            <div className="text-4xl md:text-6xl bluet">
               <h1 className="uppercase font-bold">EARTH</h1>
               <h1 className="uppercase font-bold">FARERS</h1>
               <h1 className="uppercase font-bold">EXIM</h1>

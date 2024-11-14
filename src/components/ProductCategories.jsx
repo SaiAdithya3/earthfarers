@@ -79,7 +79,7 @@ const ProductCategories = () => {
         <h2 className="text-5xl intern font-bold text-gray-800 mb-8">
           Our Product Categories
         </h2>
-        <p className="w-8/12 text-center mb-4">
+        <p className="w-full md:w-8/12 text-center mb-4">
           We offer a wide range of products to meet your needs. From fresh
           fruits and vegetables to raw cotton and plastic products, we have it
           all.

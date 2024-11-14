@@ -41,10 +41,10 @@ const KeyServices = () => {
   return (
     <section className="mb-[100px] py-12 px-6 xl:px-20">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-5xl text-start font-bold intern text-gray-800 mb-2">
+        <h2 className="text-5xl text-center md:text-start font-bold intern text-gray-800 mb-2">
           Our Key Services
         </h2>
-        <p className="text-start w-9/12 mb-8">
+        <p className="text-center md:text-start w-full md:w-9/12 mb-8">
           Our services are designed to provide you with a seamless and reliable
           experience, ensuring your business needs are met with the highest
           standards of quality and integrity.
@@ -63,7 +63,7 @@ const KeyServices = () => {
                 <p className="text-start text-gray-600 mt-2">{service.description}</p>
               </div>
             ))}
-            <div className="bluex w-96 h-96 absolute z-[-10] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="hidden md:flex bluex w-96 h-96 absolute z-[-10] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
           </div>
 
           <div className="lg:w-1/3 mt-6 lg:mt-0">
