@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f1ede6;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.mix {
+  mix-blend-mode: color-dodge;
+  position: fixed;
+  font-size: 3rem;
+  padding: 2.5rem;
+  color: var(--color);
+  max-width: 800px;
+}
+
+
+@font-face {
+  font-family: 'itnernational';
+  src: url("./assets/fonts//International.ttf"), format("truetype");
+
+}
+
+.intern {
+  font-family: 'itnernational';
+
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bluex {
+  background-color: #064185;
+}
+
+.bluet {
+  color: #064185;
+}
