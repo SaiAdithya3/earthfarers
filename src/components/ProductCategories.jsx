@@ -74,7 +74,7 @@ const ProductCategories = () => {
   };
 
   return (
-    <section className="py-12 px-6 lg:px-20 w-full">
+    <section className="mt-[100px] mb-[80px] py-12 px-6 lg:px-20 w-full">
       <div className="max-w-6xl flex items-center flex-col w-full mx-auto text-center">
         <h2 className="text-5xl intern font-bold text-gray-800 mb-8">
           Our Product Categories
