@@ -21,7 +21,7 @@ const ShortAbout = () => {
           <div className="flex items-start mt-5 justify-start">
             <Link
               to="/about"
-              className="bg-white bluex py-3 px-6 rounded-2xl text-white font-semibold hover:bg-gray-100 transition w-fit  lg:mx-0"
+              className="bg-white bluex py-3 px-6 rounded-2xl text-white font-semibold transition w-fit  lg:mx-0"
             >
               Read more
             </Link>

@@ -24,7 +24,7 @@ const Footer = () => {
               <a href="/about" className="w-[40%] md:w-full text-start md:text-end mb-2 hover:underline hover:bluet transition-all">About Us</a>
               <a href="/services" className="w-[40%] md:w-full mb-2 text-start md:text-end hover:underline hover:bluet transition-all">Services</a>
               <a href="/contact" className="w-[40%] md:w-full mb-2 hover:bluet hover:underline text-start md:text-end transition-all">Contact</a>
-              <a href="/privacy-policy" className="w-[40%] md:w-full mb-2 hover:bluet hover:underline text-start md:text-end transition-all">Privacy Policy</a>
+              <a href="/privacy-policy" className="w-[40%] md:w-full mb-2 hover:bluet hover:underline text-start md:text-end transition-all">Terms & Conditions </a>
             </div>
             {/* <div className="flex flex-col">
               <a href="mailto:contact@earthfarers.com" className="mb-2 hover:text-blue-600 transition-all">Email: contact@earthfarers.com</a>

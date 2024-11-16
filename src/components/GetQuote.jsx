@@ -5,16 +5,16 @@ const GetQuote = () => {
   return (
     <section className="mt-[100px] mb-[100px] py-16 px-6 xl:px-20 text-white">
       <div
-        className="max-w-7xl mx-auto bg-black bg-opacity-60 p-10 rounded-[35px] bg-cover bg-center bg-gradient-to-tr from-black to-transparent"
+        className="max-w-7xl mx-auto bg-black bg-opacity-60 p-2 md:p-10 rounded-[35px] bg-cover bg-center bg-gradient-to-tr from-black to-transparent"
         style={{
           backgroundImage:
             "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent), url('https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
         }}
       >
-        <div className="flex flex-col lg:flex-row items-center lg:items-end gap-10 ">
+        <div className="flex flex-col lg:flex-row items-center pt-10 lg:items-end gap-10 ">
           {/* Left Section - Text */}
           <div className="w-full md:w-8/12 flex flex-col justify-end text-center lg:text-left">
-            <h2 className="text-4xl intern font-bold mb-4">
+            <h2 className="text-2xl md:text-4xl intern font-bold mb-4">
               Partner with Earth Farers EXIM
             </h2>
             <p className="text-lg md:text-xl mb-8">
@@ -27,7 +27,7 @@ const GetQuote = () => {
                 to="#products"
                 className="bg-white bluet py-3 px-6 rounded-2xl font-semibold hover:bg-gray-100 transition w-fit  lg:mx-0"
               >
-                View Products
+                About us 
               </Link>
               <Link
                 to="#products"

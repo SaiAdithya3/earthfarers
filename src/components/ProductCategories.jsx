@@ -84,7 +84,7 @@ const ProductCategories = () => {
           fruits and vegetables to raw cotton and plastic products, we have it
           all.
         </p>
-        <div className="gap-8 mt-6 w-full flex transform justify-between items-center">
+        <div className="gap-8 hidden md:flex mt-6 w-full transform justify-between items-center">
           <AnimatePresence>
             {(showFirstSet ? categories.slice(0, 3) : categories.slice(3)).map(
               (category, index) => (
@@ -95,7 +95,7 @@ const ProductCategories = () => {
                     opacity: 1,
                     y: 0,
                   }}
-                  exit={{ opacity: 0, y: 50 }} 
+                  exit={{ opacity: 0, y: 50 }}
                   transition={{
                     delay: index * 0.2,
                     duration: 0.6,
@@ -133,9 +133,7 @@ const ProductCategories = () => {
                       className="mt-16 text-black intern rounded-full py-6 p-3 group font-semibold transition-all relative duration-300"
                     >
                       <span className="relative z-10">More</span>
-                      <div
-                        className="absolute z-10 top-0 scale-110 hover:scale-100 left-0 right-0 rounded-full bottom-0 border-[#064185] border transition-all"
-                      >
+                      <div className="absolute z-10 top-0 scale-110 hover:scale-100 left-0 right-0 rounded-full bottom-0 border-[#064185] border transition-all">
                         <span className="absolute right-0 bottom-0 h-4 w-6 group-hover:bottom-3 transition-all z-10 bg-[#f1ede6]"></span>
                       </div>
                     </button>
@@ -145,6 +143,65 @@ const ProductCategories = () => {
             )}
           </AnimatePresence>
         </div>
+        <div className="gap-8 mt-6 w-full flex md:hidden transform justify-between items-center">
+          <AnimatePresence>
+            {(showFirstSet ? categories.slice(0, 2) : categories.slice(2, 4)).map(
+              (category, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  exit={{ opacity: 0, y: 50 }}
+                  transition={{
+                    delay: index * 0.2,
+                    duration: 0.6,
+                    ease: "easeOut",
+                  }}
+                  className="flex w-full flex-col items-center justify-center"
+                >
+                  <div
+                    className="w-full flex flex-col items-center text-center rounded-lg transition-shadow duration-300"
+                    // style={{
+                    //   marginTop: `${category.show ? "0" : "5rem"}`,
+                    // }}
+                  >
+                    <div className="relative">
+                      <img
+                        src={category.imageUrl}
+                        alt={category.title}
+                        className="w-full h-72 scale-110 object-cover mb-4 transition-transform duration-500 cursor-pointer ease-in-out transform hover:scale-105 z-10"
+                        style={{
+                          clipPath: "ellipse(40% 50%)",
+                          borderRadius: "8px",
+                        }}
+                      />
+                    </div>
+                    <h3 className="text-xl mt-4 intern font-semibold text-gray-700">
+                      {category.title}
+                    </h3>
+                    <p className="text-gray-600 mt-2 line-clamp-1">
+                      {category.description}
+                    </p>
+                  </div>
+                </motion.div>
+              )
+            )}
+              </AnimatePresence>
+              </div>
+            {true && (
+              <button
+                onClick={handleToggle}
+                className="flex md:hidden mt-16 text-black intern rounded-full py-6 p-3 group font-semibold transition-all relative duration-300"
+              >
+                <span className="relative z-10">More</span>
+                <div className="absolute z-10 top-0 scale-110 hover:scale-100 left-0 right-0 rounded-full bottom-0 border-[#064185] border transition-all">
+                  <span className="absolute right-0 bottom-0 h-4 w-6 group-hover:bottom-3 transition-all z-10 bg-[#f1ede6]"></span>
+                </div>
+              </button>
+            )}
       </div>
     </section>
   );

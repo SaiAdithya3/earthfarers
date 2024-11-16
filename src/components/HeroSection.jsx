@@ -35,7 +35,7 @@ const HeroSection = () => {
       <div className="absolute top-1/2 left-1/2 transform z-[900]  -translate-x-1/2 -translate-y-1/2 text-9xl font-bold text-center    text-white     pointer-events-none select-none">
         <img className="    invert   " src={svg} alt="" />
       </div>
-      <div className="relative overflow-hidden z-[800] flex items-center justify-center">
+      <div className="w-full relative overflow-hidden z-[800] flex items-center justify-center">
         {/* Navbar */}
         <Navbar />
         {/* Animated Video Reveal */}
@@ -45,7 +45,7 @@ const HeroSection = () => {
           animate={["rise", "reveal"]}
           variants={variants}
           style={{
-            width: "99vw",
+            width: "100vw",
             height: "100vh",
             overflow: "hidden",
             display: "flex",

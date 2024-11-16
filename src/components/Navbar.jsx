@@ -34,7 +34,7 @@ const Navbar = () => {
         </motion.div>
 
         {/* Right Navbar Links */}
-        <div className="hidden lg:flex space-x-8 text-lg font-medium text-white">
+        <div className="hidden items-center lg:flex space-x-8 text-lg font-medium text-white">
           <Link to="/" className="hover:text-gray-400">
             Home
           </Link>
@@ -47,6 +47,12 @@ const Navbar = () => {
           <Link to="#contact" className="hover:text-gray-400">
             Blog
           </Link>
+          <Link
+                to="#products"
+                className="bluex py-1.5 text-md px-4 rounded-2xl transition lg:mx-0"
+              >
+                Get a Quote
+              </Link>
         </div>
 
         {/* Hamburger Icon for mobile */}
@@ -119,6 +125,7 @@ const Navbar = () => {
             >
               Blog
             </Link>
+            
           </div>
         </div>
       </div>
