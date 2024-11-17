@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/blue.png";
+import { MdArrowOutward } from "react-icons/md";
+
 
 const ShortAbout = () => {
   return (
@@ -21,9 +23,9 @@ const ShortAbout = () => {
           <div className="flex items-start mt-5 justify-start">
             <Link
               to="/about"
-              className="bg-white bluex py-3 px-6 rounded-2xl text-white font-semibold transition w-fit  lg:mx-0"
+              className="bg-white bluex py-3 px-6 uppercase rounded-2xl text-white font-semibold  w-fit flex items-center gap-1 hover:shadow-xl transition-shadow lg:mx-0"
             >
-              Read more
+              Read more <MdArrowOutward className="inline-block text-2xl" />
             </Link>
           </div>
         </div>

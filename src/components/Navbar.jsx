@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/blue.png";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // To track if the menu is open
+  const location = useLocation(); // To get the current location
+  const darkNavLocations = ["/privacy", "/terms", "/other-dark-page"]; // Define dark location routes
+
+  // Check if the current location is in the darkNavLocations array
+  const isDarkLocation = darkNavLocations.includes(location.pathname);
 
   const navItemVariants = {
     hidden: { opacity: 0, x: 100 },
@@ -22,10 +27,11 @@ const Navbar = () => {
   return (
     <>
       <div className="absolute overflow-hidden top-0 left-0 z-[800] w-full flex items-center justify-between p-6 lg:p-10">
+        {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 2.5, duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           className="flex items-center space-x-3"
         >
           <Link to="/" className="w-12 h-12">
@@ -34,25 +40,51 @@ const Navbar = () => {
         </motion.div>
 
         {/* Right Navbar Links */}
-        <div className="hidden items-center lg:flex space-x-8 text-lg font-medium text-white">
-          <Link to="/" className="hover:text-gray-400">
+        <div
+          className={`hidden items-center lg:flex space-x-8 text-lg font-medium ${
+            isDarkLocation ? "text-black" : "text-white"
+          }`}
+        >
+          <Link
+            to="/"
+            className={`hover:text-gray-200 transition-all ${
+              isDarkLocation ? "hover:text-gray-500" : ""
+            }`}
+          >
             Home
           </Link>
-          <Link to="/about" className="hover:text-gray-400">
+          <Link
+            to="/about"
+            className={`hover:text-gray-200 transition-all ${
+              isDarkLocation ? "hover:text-gray-500" : ""
+            }`}
+          >
             About
           </Link>
-          <Link to="#services" className="hover:text-gray-400">
+          <Link
+            to="/products"
+            className={`hover:text-gray-200 transition-all ${
+              isDarkLocation ? "hover:text-gray-500" : ""
+            }`}
+          >
             Products
           </Link>
-          <Link to="#contact" className="hover:text-gray-400">
+          <Link
+            to="/blog"
+            className={`hover:text-gray-200 transition-all ${
+              isDarkLocation ? "hover:text-gray-500" : ""
+            }`}
+          >
             Blog
           </Link>
           <Link
-                to="#products"
-                className="bluex py-1.5 text-md px-4 rounded-2xl transition lg:mx-0"
-              >
-                Get a Quote
-              </Link>
+            to="/contact"
+            className={`bluex py-1.5 text-md px-4 rounded-2xl transition lg:mx-0 ${
+              isDarkLocation ? "text-white bg-black" : ""
+            }`}
+          >
+            Get a Quote
+          </Link>
         </div>
 
         {/* Hamburger Icon for mobile */}
@@ -73,7 +105,7 @@ const Navbar = () => {
         onClick={toggleMenu}
       >
         <div
-          className={`bg-white  text-black w-3/4 h-full p-6 transform transition-transform duration-500 ease-in-out ${
+          className={`bg-white text-black w-3/4 h-full p-6 transform transition-transform duration-500 ease-in-out ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -112,20 +144,19 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              to="#services"
+              to="/products"
               className="text-black font-semibold uppercase hover:text-gray-600"
               onClick={toggleMenu}
             >
               Products
             </Link>
             <Link
-              to="#contact"
+              to="/blog"
               className="text-black font-semibold uppercase hover:text-gray-600"
               onClick={toggleMenu}
             >
               Blog
             </Link>
-            
           </div>
         </div>
       </div>

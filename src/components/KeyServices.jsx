@@ -57,7 +57,7 @@ const KeyServices = () => {
                 className={`flex bg-[#f1ede6] w-full md:w-1/2 lg:w-[48%] flex-col items-center text-center p-6 transition-shadow duration-300 border-[#064185] ${service.borderClass}`}
               >
                 <div className="icon w-full mt-4 items-start">{service.icon}</div>
-                <h3 className="text-start text-2xl intern font-semibold text-gray-700 mt-4">
+                <h3 className="text-start text-2xl fill-gray-700 uppercase font-semibold text-gray-700 mt-4">
                   {service.title}
                 </h3>
                 <p className="text-start text-gray-600 mt-2">{service.description}</p>
