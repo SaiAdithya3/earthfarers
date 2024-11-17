@@ -12,32 +12,38 @@ import blue from "../assets/blue.png";
 import { IoDiamondOutline } from "react-icons/io5";
 import { TbEye } from "react-icons/tb";
 import { TbTargetArrow } from "react-icons/tb";
+import { RiDoubleQuotesL } from "react-icons/ri";
 
 const people = [
   {
     name: "Christian Meena Edmand",
     role: "Chief Executive Officer",
+    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
     image: person3,
   },
   {
     name: "Christian Joy",
     role: "Chief Operations Officer",
     image: person1,
+    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
   },
   {
     name: "Arumai Selvam",
     role: "Chief Financial Officer",
     image: person5,
+    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
   },
   {
     name: "Darpan",
     role: "Head of Logistics",
     image: person2,
+    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
   },
   {
     name: "Vrjesh",
     role: "Marketing Director",
     image: person4,
+    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
   },
 ];
 
@@ -67,8 +73,8 @@ const About = () => {
 
       {/* About Section */}
       <section className="w-full pt-16 mt-[100px] px-6 xl:px-20 text-gray-800">
-        <div className="max-w-6xl flex mx-auto text-center">
-          <div className="w-2/3">
+        <div className="max-w-6xl flex flex-col-reverse md:flex-row mx-auto items-start text-center">
+          <div className="w-full md:w-1/2 lg:w-2/3">
             <h2 className="text-4xl text-start intern md:text-5xl font-bold mb-6">
               Who We Are
             </h2>
@@ -92,13 +98,13 @@ const About = () => {
 
       {/* Mission & Vision Section */}
       <section className="w-full py-16 px-6 xl:px-20 ">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="flex flex-col items-start">
             <h3 className="text-3xl font-semibold mb-4 text-gray-800">
               <TbTargetArrow className="text-4xl mr-4 inline-block" />
               Our Mission
             </h3>
-            <p className="text-gray-600 mx-4 pl-4 border-l border-black/30 leading-relaxed">
+            <p className="text-gray-600 mx-4 pl-8 border-l border-black/30 leading-relaxed">
               To facilitate seamless trade by fostering trust and delivering
               excellence, helping businesses thrive in a connected world.
             </p>
@@ -108,7 +114,7 @@ const About = () => {
               <TbEye className="text-4xl mr-4 inline-block" />
               Our Vision
             </h3>
-            <p className="text-gray-600 mx-4 pl-4 border-l border-black/30 leading-relaxed">
+            <p className="text-gray-600 mx-4 pl-8 border-l border-black/30 leading-relaxed">
               To be a global leader in import-export services, setting the
               standard for quality, transparency, and customer satisfaction.
             </p>
@@ -118,8 +124,10 @@ const About = () => {
               <IoDiamondOutline className="text-4xl mr-4 inline-block" />
               Our Values
             </h3>
-            <p className="text-gray-600 mx-4 pl-4  border-l border-black/30 leading-relaxed">
-              Integrity, Innovation, Efficiency, and Customer Focus, are the core values that drive us to deliver excellence in everything we do.
+            <p className="text-gray-600 mx-4 pl-8 border-l border-black/30 leading-relaxed">
+              Integrity, Innovation, Efficiency, and Customer Focus, are the
+              core values that drive us to deliver excellence in everything we
+              do.
             </p>
           </div>
         </div>
@@ -128,7 +136,7 @@ const About = () => {
       {/* Leadership Team Section */}
       <section className="w-full py-16 px-6 xl:px-20 ">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold w-full text-start intern mb-2">
+          <h2 className="text-4xl font-semibold w-full text-start intern mb-2">
             Meet Our Leadership Team
           </h2>
           <p className="text-start w-full mb-10">
@@ -137,19 +145,19 @@ const About = () => {
             are dedicated to providing you with the best services and solutions
             to help your business grow and thrive.
           </p>
-          <div className="flex flex-wrap items- justify-center gap-8">
+          <div className="flex flex-wrap items- justify- gap-10">
             {people.map((person, index) => (
               <div
                 key={index}
-                className="flex border border-black/30 p-4 relative w-[30%] flex-col items-center text-center rounded-2xl "
+                className={`flex relative w-full cursor-pointer shadow-lg md:w-[47%] lg:w-[30%] flex-col items-center text-center border-[#064185] rounded-2xl `}
               >
                 <img
                   src={person.image}
                   alt={person.name}
-                  className="h-72 w-72 rounded-xl object-cover "
+                  className="h-96 w-full rounded-3xl object-cover"
                 />
-                <div className=" m-1 bottom-0   justify-center backdrop-blur-sm flex flex-col gap-1 items-center">
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                <div className="absolute top-0 w-full h-full bg-gradient-to-t rounded-3xl from-black/60 to-transparent left-0 p-4 flex flex-col gap-1 justify-end items-center">
+                  <h3 className="text-2xl intern text-start font-semibold text-gray-200">
                     {person.name}
                   </h3>
                   {/* <p className="text-gray-600">{person.role}</p> */}
@@ -162,11 +170,14 @@ const About = () => {
 
       <div className="w-full quote">
         <section className="w-full py-16 px-6 xl:px-20  text-black">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl text-gray-500 intern font- mb-4">
-            "Time is essential in the export business, which is why at{" "}
-              <span className="bluet font-semibold">Earth Farers EXIM</span>, we are dedicated
-              to completing every job on schedule, without exception."
+          <div className="max-w-6xl mx-auto text-center relative">
+            <RiDoubleQuotesL className="absolute text-4xl -top-4 -left-1" />
+            <RiDoubleQuotesL className="absolute text-4xl bottom-4 scale-[-1] right-[24%]" />
+            <h2 className="text-4xl text-gray-500 leading-normal intern font- mb-4">
+              Time is essential in the export business, which is why at{" "}
+              <span className="bluet font-semibold">Earth Farers EXIM</span>, we
+              are dedicated to completing every job on schedule, without
+              exception.
             </h2>
           </div>
         </section>
