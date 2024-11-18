@@ -64,7 +64,7 @@ const About = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="w-10/12 text-5xl md:text-7xl font-bold text-center"
+          className="w-10/12 text-5xl intern md:text-7xl font-bold text-center"
         >
           {/* Delivering Excellence Across the Globe */}
           About Us
@@ -137,7 +137,7 @@ const About = () => {
       <section className="w-full py-16 px-6 xl:px-20 ">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-semibold w-full text-start intern mb-2">
-            Meet Our Leadership Team
+            Meet Our Team
           </h2>
           <p className="text-start w-full mb-10">
             Our team is made up of seasoned professionals with years of

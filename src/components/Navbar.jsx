@@ -83,7 +83,7 @@ const Navbar = () => {
               isDarkLocation ? "text-white bg-black" : ""
             }`}
           >
-            Get a Quote
+            Contact us
           </Link>
         </div>
 

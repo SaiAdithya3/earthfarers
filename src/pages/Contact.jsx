@@ -34,7 +34,7 @@ const Contact = () => {
         </p>
         <div className="max-w-7xl w-full justify-between flex items-center mb-[100px]">
           <div className="w-">
-            <h2 className="text-3xl intern font-bold mb-4">Follow us</h2>
+            <h2 className="text-3xl  font-bold mb-4">Follow us</h2>
             <div className="flex flex-col justify-start gap-4 mb-6">
               <a
                 href="https://www.youtube.com"
@@ -62,13 +62,13 @@ const Contact = () => {
               </a>
             </div>
             <hr className="w-full mb-6 border border-zinc-300" />
-            <h2 className="text-3xl intern font-bold mb-4">Our Office</h2>
+            <h2 className="text-3xl  font-bold mb-4">Our Office</h2>
             <p className="text-start text-lg text-gray-600 mb-6">
             4 Hiraba Kesar Park Near Ramtalavadi NADIAD 
 
             </p>
             <hr className="w-full mb-6 border border-zinc-300" />
-            <h2 className="text-3xl intern font-bold mb-4">Contact Details</h2>
+            <h2 className="text-3xl  font-bold mb-4">Contact Details</h2>
             <p className="text-start text-lg text-gray-600 mb-6">
             Email: info@eathfarersexim.com 
             </p>

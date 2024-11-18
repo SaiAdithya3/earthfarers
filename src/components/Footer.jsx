@@ -1,7 +1,7 @@
 import React from "react";
 import blue from "../assets/blue.png";
 import { Link } from "react-router-dom";
-import { FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaYoutube, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,6 +21,14 @@ const Footer = () => {
         <div className="flex flex-col md:px-0 px-4 lg:flex-row gap-6 text-gray-600">
           <div className="flex flex-col md:flex-col text-lg md:text-2xl uppercase font-semibold">
           <div className="flex justify-start md:justify-end items- gap-4 mb-6">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-3xl transition-all"
+              >
+                <FaFacebook />
+              </a>
               <a
                 href="https://www.youtube.com"
                 target="_blank"

@@ -37,7 +37,7 @@ const HeroSection = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 2 }}
-          className="w-8/12 text-6xl md:text-9xl text-center intern font-semibold"
+          className="w-8/12 text-6xl md:text-8xl int text-center font-semibold"
         >
           EARTH FARERS EXIM
         </motion.h1>
