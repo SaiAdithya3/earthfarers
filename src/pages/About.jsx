@@ -19,31 +19,36 @@ const people = [
     name: "Christian Meena Edmand",
     role: "Chief Executive Officer",
     borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
+    desc: "",
     image: person3,
   },
   {
     name: "Christian Joy",
-    role: "Chief Operations Officer",
+    role: "Chief Operating Officer",
     image: person1,
     borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
+    desc: "Christian Joy plays a critical role in overseeing the day-to-day operations at Earth Farers EXIM. He is responsible for refining internal processes, ensuring the company’s strategic objectives are met with precision. Joy consistently brings fresh, innovative solutions that streamline workflows, manage complex international markets, and maintain rigorous risk assessments. His leadership is key in guaranteeing smooth and secure shipment operations, enabling the company to excel in global trade.",
   },
   {
     name: "Arumai Selvam",
-    role: "Chief Financial Officer",
+    role: "Contract Manager",
     image: person5,
     borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
+    desc: "Arumai Selvam is pivotal in managing the contract lifecycle at Earth Farers EXIM. He meticulously oversees each agreement, ensuring that all terms and conditions are strictly followed. Arumai works closely with international clients, verifying that all regulatory and compliance standards are met before finalizing any contract. His attention to detail guarantees that agreements are accurate, fair, and fully compliant, safeguarding both the company’s interests and client satisfaction."
   },
   {
     name: "Darpan",
-    role: "Head of Logistics",
+    role: "Project Manager",
     image: person2,
     borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
+    desc: "Darpan is dedicated to maintaining the highest standards of quality at Earth Farers EXIM. He is responsible for defining the product vision, strategy, and roadmap, ensuring that each product aligns with the company’s goals and meets market demands. When it’s time to pack your order, Darpan meticulously oversees the process, guaranteeing that the correct product reaches our customers every time. His commitment ensures that we consistently deliver top-quality products that meet our clients' expectations.",
   },
   {
     name: "Vrjesh",
-    role: "Marketing Director",
+    role: "Performace analyst",
     image: person4,
     borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
+    desc: "Vrajesh is crucial to Earth Farers EXIM, conducting in-depth market research and data analysis to guide strategic decisions. His expertise helps the company stay competitive and responsive to client needs, ensuring that actions are data-driven and aligned with market trends.",
   },
 ];
 

@@ -1,63 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GetQuote from "../components/GetQuote";
 import { motion } from "framer-motion";
-import { MdOutlineFileDownload } from "react-icons/md";
-import plasticsheets from "../assets/plasticsheets.jpg";
-
-const categories = [
-  {
-    // icon: <FaAppleAlt className="text-green-600 text-4xl mb-4" />,
-    imageUrl:
-      "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
-    title: "Fruits",
-    description: "Banana, Pomegranates, Pineapple, Mango, Jackfruit",
-    link: "/fruits",
-  },
-  {
-    // icon: <FaLeaf className="text-green-600 text-4xl mb-4" />,
-    imageUrl:
-      "https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Vegetables",
-    description: "Fresh Garlic, Onion",
-    link: "/vegetables",
-  },
-  {
-    // icon: <FaSeedling className="text-green-600 text-4xl mb-4" />,
-    imageUrl:
-      "https://images.pexels.com/photos/7956503/pexels-photo-7956503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Powder Form",
-    description:
-      "Garlic powder, Banana powder, Guar gum powder, Jackfruit powder",
-    link: "/powder-form",
-  },
-  {
-    // icon: <FaCoffee className="text-green-600 text-4xl mb-4" />,
-    imageUrl:
-      "https://t4.ftcdn.net/jpg/09/11/95/53/360_F_911955321_CXUGBnRFF6oBY3YHldxk5uiT7NAZc5nI.jpg",
-    title: "Tea",
-    description: "High-quality tea from trusted suppliers",
-    link: "/tea",
-  },
-  {
-    // icon: <FaTshirt className="text-green-600 text-4xl mb-4" />,
-    imageUrl:
-      "https://images.pexels.com/photos/13276484/pexels-photo-13276484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Raw Cotton & Cotton Waste",
-    description: "Top-grade cotton for various uses",
-    link: "/cotton",
-  },
-  {
-    // icon: <FaBoxOpen className="text-green-600 text-4xl mb-4" />,
-    imageUrl: plasticsheets,
-    title: "Plastic Products",
-    description: "Plastic films, raw materials, optical fibers",
-    link: "/plastic-products",
-  },
-];
+import { MdOutlineFileDownload, MdArrowForwardIos } from "react-icons/md";
+import categories from "./categories";
+import { MdArrowOutward } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Products = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedCategory(null);
+  };
+
   return (
     <div className="flex flex-col items-center w-full">
       <Navbar />
@@ -102,22 +63,78 @@ const Products = () => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className=" w-full md:w-[45%] lg:w-[48%] flex border border-black/10  rounded-3xl cursor-pointer hover:bg-zinc-400/10 transition-all overflow-hidden transform h"
+            className="relative w-full md:w-[45%] lg:w-[48%] flex border border-black/10 rounded-3xl cursor-pointer hover:bg-zinc-400/10 transition-all overflow-hidden transform h"
+            onClick={() => handleCategoryClick(category)}
           >
             <img
               src={category.imageUrl}
               alt={category.title}
               className="w-full h-96 object-cover rounded-2xl"
             />
-            <div className="absolute top-0 bg-gradient-to-t from-black/70 to-transparent w-full h-full left-0 px-6 flex flex-col justify-end items-start gap-3">
-              <h3 className="text-4xl intern text-white font-semibold mb-2">
-                {category.title}
-              </h3>
-              <p className="text-gray-200 mb-4">{category.description}</p>
+            <div className="absolute top-0 bg-gradient-to-t from-black/70 to-transparent w-full h-full left-0 p-8 flex justify-between items-end gap-3">
+              <div className="flex flex-col items-start ga">
+                <h3 className="text-4xl intern text-white font-semibold mb-2">
+                  {category.title}
+                </h3>
+                <p className="text-gray-200 ">{category.description}</p>
+              </div>
+              <div className="h-full flex items-end justify-end p-3">
+                <MdArrowOutward className="text-2xl text-white " />
+              </div>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Modal for displaying products */}
+      {selectedCategory && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="fixed inset-0 bg-black/50 flex items-center justify-center"
+        >
+          <div className="bg-[#f1ede6] p-8 rounded-xl h-4/5 w-11/12 overflow-y-scroll max-w-4xl">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-3xl intern font-semibold">
+                {selectedCategory.title}
+              </h2>
+              <button
+                onClick={handleCloseModal}
+                className="text-2xl font-bold text-gray-500"
+              >
+                <AiOutlineClose />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {selectedCategory.products.map((product, index) => (
+                <div
+                  key={index}
+                  className="border border-gray-200 p-4 rounded-xl flex flex-col items-center gap-4"
+                >
+                  <img
+                    src={product.imageUrl}
+                    alt={product.name}
+                    className="w-full h-40 object-cover rounded-xl"
+                  />
+                  <h3 className="text-xl font-semibold">{product.name}</h3>
+                  <p className="text-gray-600 text-center">
+                    {product.description}
+                  </p>
+                  <a
+                    href={product.downloadUrl}
+                    download
+                    className="bg-blue-600 text-white py-2 px-4 rounded-xl mt-4 hover:bg-blue-700"
+                  >
+                    Download
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      )}
 
       <GetQuote />
       <Footer />
