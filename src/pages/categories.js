@@ -1,9 +1,13 @@
 import plasticsheets from "../assets/plasticsheets.jpg";
+import fruits from "../assets/products/fruits.jpeg";
+import vegetables from "../assets/products/vegetables.webp";
+import powders from "../assets/products/powders.jpeg";
+import tea from "../assets/products/tea.jpg";
+import cotton from "../assets/products/cotton.webp";
 
 const categories = [
     {
-      imageUrl:
-        "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
+      imageUrl: fruits,
       title: "Fruits",
       description: "Banana, Pomegranates, Pineapple, Mango, Jackfruit",
       link: "/fruits",
@@ -11,43 +15,41 @@ const categories = [
         {
           name: "Banana",
           description: "Fresh and ripe bananas.",
-          imageUrl:
-            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/banana.pdf",
+          imageUrl: "src/assets/products/banana.webp",
+          downloadUrl: "src/assets/products/banana.pdf",
         },
         {
           name: "Pomegranates",
           description: "Fresh pomegranates rich in nutrients.",
           imageUrl:
-            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/pomegranates.pdf",
+            "src/assets/products/pomegranate.jpeg",
+          downloadUrl: "src/assets/products/promograntes.pdf",
         },
         {
           name: "Pineapple",
           description: "Sweet and tangy pineapples.",
           imageUrl:
-            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/pineapple.pdf",
+            "src/assets/products/pineapple.webp",
+          downloadUrl: "src/assets/products/pineapple.pdf",
         },
         {
           name: "Mango",
           description: "Sweet mangoes from the tropical region.",
           imageUrl:
-            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/mango.pdf",
+            "src/assets/products/mangoes.jpg",
+          downloadUrl: "src/assets/products/mangoes.pdf",
         },
         {
           name: "Jackfruit",
           description: "Large jackfruit with a sweet flavor.",
           imageUrl:
-            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/jackfruit.pdf",
+            "src/assets/products/jackfruit.jpg",
+          downloadUrl: "src/assets/products/jackfruit.pdf",
         },
       ],
     },
     {
-      imageUrl:
-        "https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageUrl: vegetables,
       title: "Vegetables",
       description: "Fresh Garlic, Onion",
       link: "/vegetables",
@@ -56,34 +58,20 @@ const categories = [
           name: "Garlic",
           description: "Fresh organic garlic cloves.",
           imageUrl:
-            "https://images.pexels.com/photos/2790304/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/garlic.pdf",
+            "src/assets/products/garlic.avif",
+          downloadUrl: "src/assets/products/garlic.pdf",
         },
         {
           name: "Onion",
           description: "Fresh red onions for all your recipes.",
           imageUrl:
-            "https://images.pexels.com/photos/723177/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/onion.pdf",
-        },
-        {
-          name: "Tomato",
-          description: "Juicy tomatoes perfect for cooking.",
-          imageUrl:
-            "https://images.pexels.com/photos/1181676/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/tomato.pdf",
-        },
-        {
-          name: "Cucumber",
-          description: "Fresh cucumbers, perfect for salads.",
-           imageUrl: "https://images.pexels.com/photos/974864/pexels-photo-1132047.jpeg",
-          downloadUrl: "/downloads/cucumber.pdf",
+            "src/assets/products/onions.jpg",
+          downloadUrl: "src/assets/products/onions.pdf",
         },
       ],
     },
     {
-      imageUrl:
-        "https://images.pexels.com/photos/7956503/pexels-photo-7956503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageUrl: powders,
       title: "Powder Form",
       description: "Garlic powder, Banana powder, Guar gum powder, Jackfruit powder",
       link: "/powder-form",
@@ -92,35 +80,34 @@ const categories = [
           name: "Garlic Powder",
           description: "100% pure garlic powder.",
           imageUrl:
-            "https://images.pexels.com/photos/1126597/pexels-photo-7956503.jpeg",
-          downloadUrl: "/downloads/garlic-powder.pdf",
+            "src/assets/products/garlic-powder.webp",
+          downloadUrl: "src/assets/products/garlicpowder.pdf",
         },
         {
           name: "Banana Powder",
           description: "Natural banana powder for smoothies.",
           imageUrl:
-            "https://images.pexels.com/photos/5055660/pexels-photo-7956503.jpeg",
-          downloadUrl: "/downloads/banana-powder.pdf",
+            "src/assets/products/banana-powder.jpg",
+          downloadUrl: "src/assets/products/bananapowder.pdf",
         },
         {
           name: "Guar Gum Powder",
           description: "High-quality guar gum powder for culinary use.",
           imageUrl:
-            "https://images.pexels.com/photos/6701762/pexels-photo-7956503.jpeg",
-          downloadUrl: "/downloads/guar-gum-powder.pdf",
+            "src/assets/products/guargumpowder.webp",
+          downloadUrl: "src/assets/products/gargumpowder.pdf",
         },
         {
           name: "Jackfruit Powder",
           description: "Organic jackfruit powder for various recipes.",
           imageUrl:
-            "https://images.pexels.com/photos/3461079/pexels-photo-7956503.jpeg",
-          downloadUrl: "/downloads/jackfruit-powder.pdf",
+            "src/assets/products/jackfruitpowder.png",
+          downloadUrl: "src/assets/products/jackfruitpowder.pdf",
         },
       ],
     },
     {
-      imageUrl:
-        "https://t4.ftcdn.net/jpg/09/11/95/53/360_F_911955321_CXUGBnRFF6oBY3YHldxk5uiT7NAZc5nI.jpg",
+      imageUrl: tea,
       title: "Tea",
       description: "High-quality tea from trusted suppliers",
       link: "/tea",
@@ -129,21 +116,20 @@ const categories = [
           name: "Green Tea",
           description: "Fresh green tea leaves from the best sources.",
           imageUrl:
-            "https://images.pexels.com/photos/1028325/pexels-photo-7956503.jpeg",
-          downloadUrl: "/downloads/green-tea.pdf",
+            "src/assets/products/tealeaf.avif",
+          downloadUrl: "src/assets/products/tea.pdf",
         },
         {
           name: "Black Tea",
           description: "A rich and bold black tea for every occasion.",
           imageUrl:
-            "https://images.pexels.com/photos/6279076/pexels-photo-7956503.jpeg",
-          downloadUrl: "/downloads/black-tea.pdf",
+            "src/assets/products/tealeaf.avif",
+          downloadUrl: "src/assets/products/tea.pdf",
         },
       ],
     },
     {
-      imageUrl:
-        "https://images.pexels.com/photos/13276484/pexels-photo-13276484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageUrl: cotton,
       title: "Raw Cotton & Cotton Waste",
       description: "Top-grade cotton for various uses",
       link: "/cotton",
@@ -152,15 +138,15 @@ const categories = [
           name: "Raw Cotton",
           description: "High-quality raw cotton for textile production.",
           imageUrl:
-            "https://images.pexels.com/photos/3791256/pexels-photo-13276484.jpeg",
-          downloadUrl: "/downloads/raw-cotton.pdf",
+            "src/assets/products/cotton.webp",
+          downloadUrl: "src/assets/products/rawcotton.pdf",
         },
         {
           name: "Cotton Waste",
           description: "Cotton waste for recycling and other uses.",
           imageUrl:
-            "https://images.pexels.com/photos/4590725/pexels-photo-13276484.jpeg",
-          downloadUrl: "/downloads/cotton-waste.pdf",
+            "src/assets/products/cottonwaste.jpg",
+          downloadUrl: "src/assets/products/cottonwaste.pdf",
         },
       ],
     },
@@ -174,19 +160,19 @@ const categories = [
           name: "Plastic Films",
           description: "High-quality plastic films for various industries.",
           imageUrl: plasticsheets, 
-          downloadUrl: "/downloads/plastic-films.pdf",
+          downloadUrl: "src/assets/products/plasticfilm.pdf",
         },
         {
           name: "Raw Plastic Materials",
           description: "Raw plastic materials for manufacturing.",
-          imageUrl: plasticsheets,
-          downloadUrl: "/downloads/raw-plastic-materials.pdf",
+           imageUrl: "src/assets/products/plasticraw.jpg",
+          downloadUrl: "src/assets/products/rawplastic.pdf",
         },
         {
           name: "Optical Fibers",
           description: "High-performance optical fibers for telecommunications.",
-          imageUrl: plasticsheets,
-          downloadUrl: "/downloads/optical-fibers.pdf",
+          imageUrl: "src/assets/products/fiberoptics.jpg",
+          downloadUrl: "src/assets/products/opticalfibre.pdf",
         },
       ],
     },

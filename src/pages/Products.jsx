@@ -8,6 +8,7 @@ import categories from "./categories";
 import { MdArrowOutward } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 
+
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -52,10 +53,10 @@ const Products = () => {
             trusted partner.
           </p>
         </div>
-        <button className=" px-6 py-3 bluex text-white group shadow hover:shadow-xl transition-shadow rounded-xl flex items-center gap-2">
-          <MdOutlineFileDownload className="text-2xl" />
-          Download PDF
-        </button>
+        <a href="#quote" className=" px-6 py-3 bluex text-white group shadow hover:shadow-xl transition-shadow rounded-xl flex items-center gap-2">
+          {/* <MdOutlineFileDownload className="text-2xl" /> */}
+          Get a Quote
+        </a>
       </div>
 
       {/* Product Cards Section */}
@@ -94,14 +95,14 @@ const Products = () => {
           transition={{ duration: 0.5 }}
           className="fixed inset-0 bg-black/50 flex items-center justify-center"
         >
-          <div className="bg-[#f1ede6] pb-8 relative  h-4/5 w-11/12 overflow-y-scroll max-w-4xl">
-            <div className="flex sticky top-0 pt-8 px-8 left-0 w-full bg-[#f1ede6] justify-between items-center mb-4">
+          <div className="bg-[#f1ede6] pb-8 relative h-[90%] md:h-4/5 w-11/12 overflow-y-scroll max-w-4xl">
+            <div className="flex sticky top-0 pt-8 px-8 pb-2 left-0 w-full bg-[#f1ede6] justify-between items-center mb-4">
               <h2 className="text-3xl intern font-semibold">
                 {selectedCategory.title}
               </h2>
               <button
                 onClick={handleCloseModal}
-                className="text-2xl font-bold text-gray-500"
+                className="text-2xl font-bold border p-2 rounded-full border-zinc-400 text-gray-500"
               >
                 <AiOutlineClose />
               </button>
@@ -111,7 +112,7 @@ const Products = () => {
               {selectedCategory.products.map((product, index) => (
                 <div
                   key={index}
-                  className="border hover:bg-[#eae1d0] hover:shadow-lg hover:border-[#eae1d0] transition-all duration-150 ease-in cursor-pointer border-gray-200 p-4 rounded-2xl flex flex-col items-center gap-4"
+                  className="border hover:bg-[#eae1d0] hover:shadow-lg hover:border-[#eae1d0] transition-all duration-150 ease-in cursor-pointer border-gray-300 p-4 rounded-2xl flex flex-col items-center gap-4"
                 >
                   <img
                     src={product.imageUrl}
@@ -125,11 +126,12 @@ const Products = () => {
                   </p>
                   <a
                     href={product.downloadUrl}
+                    target="_blank"
                     download
                     className="bluex flex items-center gap-1 text-white py-2 px-6 rounded-xl mt-4"
                   >
                     <MdOutlineFileDownload className="text-2xl" />
-                    Download
+                    Download PDF
                   </a>
                 </div>
               ))}

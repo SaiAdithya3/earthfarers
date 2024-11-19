@@ -9,29 +9,32 @@ import {
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import plasticsheets from "../assets/plasticsheets.jpg";
+import fruits from "../assets/products/fruits.jpeg";
+import vegetables from "../assets/products/vegetables.webp";
+import powders from "../assets/products/powders.jpeg";
+import tea from "../assets/products/tea.jpg";
+import cotton from "../assets/products/cotton.webp";
 
 const ProductCategories = () => {
   const categories = [
     {
       icon: <FaAppleAlt className="text-green-600 text-4xl mb-4" />,
-      imageUrl:
-        "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
+      imageUrl: fruits,
       title: "Fruits",
       description: "Banana, Pomegranates, Pineapple, Mango, Jackfruit",
       link: "/fruits",
     },
     {
       icon: <FaLeaf className="text-green-600 text-4xl mb-4" />,
-      imageUrl:
-        "https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageUrl: vegetables,
       title: "Vegetables",
       description: "Fresh Garlic, Onion",
       link: "/vegetables",
     },
     {
       icon: <FaSeedling className="text-green-600 text-4xl mb-4" />,
-      imageUrl:
-        "https://images.pexels.com/photos/7956503/pexels-photo-7956503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageUrl: powders,
       title: "Powder Form",
       description:
         "Garlic powder, Banana powder, Guar gum powder, Jackfruit powder",
@@ -39,24 +42,21 @@ const ProductCategories = () => {
     },
     {
       icon: <FaCoffee className="text-green-600 text-4xl mb-4" />,
-      imageUrl:
-        "https://t4.ftcdn.net/jpg/09/11/95/53/360_F_911955321_CXUGBnRFF6oBY3YHldxk5uiT7NAZc5nI.jpg",
+      imageUrl: tea,
       title: "Tea",
       description: "High-quality tea from trusted suppliers",
       link: "/tea",
     },
     {
       icon: <FaTshirt className="text-green-600 text-4xl mb-4" />,
-      imageUrl:
-        "https://images.pexels.com/photos/13276484/pexels-photo-13276484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      imageUrl: cotton,
       title: "Raw Cotton & Cotton Waste",
       description: "Top-grade cotton for various uses",
       link: "/cotton",
     },
     {
       icon: <FaBoxOpen className="text-green-600 text-4xl mb-4" />,
-      imageUrl:
-        "https://img.freepik.com/free-photo/flat-lay-pattern-with-different-shades-blue_23-2148263944.jpg",
+      imageUrl: plasticsheets,
       title: "Plastic Products",
       description: "Plastic films, raw materials, optical fibers",
       link: "/plastic-products",

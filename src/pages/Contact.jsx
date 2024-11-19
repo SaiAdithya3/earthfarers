@@ -36,14 +36,7 @@ const Contact = () => {
           <div className="w-">
             <h2 className="text-3xl  font-bold mb-4">Follow us</h2>
             <div className="flex flex-col justify-start gap-4 mb-6">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" flex items-center gap-2  transition-all"
-              >
-                <FaFacebook className="text-3xl" /> FACEBOOK
-              </a>
+             
               <a
                 href="https://www.youtube.com/@chrme21456"
                 target="_blank"
@@ -68,11 +61,19 @@ const Contact = () => {
               >
                 <FaInstagram className="text-3xl"/> INSTAGRAM
               </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" flex items-center gap-2  transition-all"
+              >
+                <FaFacebook className="text-3xl" /> FACEBOOK
+              </a>
             </div>
             <hr className="w-full mb-6 border border-zinc-300" />
             <h2 className="text-3xl  font-bold mb-4">Our Office</h2>
             <p className="text-start text-lg text-gray-600 mb-6">
-            4 Hiraba Kesar Park Near Ramtalavadi NADIAD 
+            4 Hiraba Kesar Park Near Ramtalavadi NADIAD, Gujrat, India
 
             </p>
             <hr className="w-full mb-6 border border-zinc-300" />

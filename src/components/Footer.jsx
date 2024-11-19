@@ -20,15 +20,7 @@ const Footer = () => {
         {/* Right section with links */}
         <div className="flex flex-col md:px-0 px-4 lg:flex-row gap-6 text-gray-600">
           <div className="flex flex-col md:flex-col text-lg md:text-2xl uppercase font-semibold">
-          <div className="flex justify-start md:justify-end items- gap-4 mb-6">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" text-3xl transition-all"
-              >
-                <FaFacebook />
-              </a>
+          <div className="flex justify-start md:justify-end items- gap-4 mb-6">   
               <a
                 href="https://www.youtube.com/@chrme21456"
                 target="_blank"
@@ -52,6 +44,14 @@ const Footer = () => {
                 className=" text-3xl transition-all"
               >
                 <FaInstagram />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-3xl transition-all"
+              >
+                <FaFacebook />
               </a>
             </div>
             <Link

@@ -4,10 +4,10 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GetQuote from "../components/GetQuote";
 import person1 from "../assets/person1.jpeg";
-import person2 from "../assets/person2.jpg";
 import person3 from "../assets/person3.jpg";
 import person4 from "../assets/person4.jpg";
 import person5 from "../assets/person5.jpg";
+import person6 from "../assets/person6.jpeg";
 import blue from "../assets/blue.png";
 import { IoDiamondOutline } from "react-icons/io5";
 import { TbEye } from "react-icons/tb";
@@ -36,7 +36,7 @@ const people = [
   {
     name: "Darpan",
     role: "Product Manager",
-    image: person2,
+    image: person6,
     desc: "Ensures product quality and timely delivery for customer satisfaction.",
   },
   {
@@ -168,7 +168,7 @@ const About = () => {
           <div className="max-w-6xl mx-auto text-center relative">
             <RiDoubleQuotesL className="absolute text-4xl -top-4 -left-4 md:-left-1" />
             <RiDoubleQuotesL className="absolute text-4xl bottom-0 md:bottom-4 scale-[-1] -right-4 md:right-[24%]" />
-            <h2 className="text-2xl md:text-4xl text-gray-500 leading-normal intern font- mb-4">
+            <h2 className="text-2xl md:text-4xl int text-gray-500 leading-normal  font- mb-4">
               Time is essential in the export business, which is why at{" "}
               <span className="bluet font-semibold">Earth Farers EXIM</span>, we
               are dedicated to completing every job on schedule, without

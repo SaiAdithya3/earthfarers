@@ -4,7 +4,7 @@ import Form from "./Form";
 
 const GetQuote = () => {
   return (
-    <section className="mt-[100px] mb-[100px] py-16 px-6 xl:px-20 text-white">
+    <section id="quote" className="mt-[100px] mb-[100px] py-16 px-6 xl:px-20 text-white">
       <div
         className="max-w-7xl mx-auto bg-black bg-opacity-60 p-2 md:p-10 rounded-[35px] bg-cover bg-center bg-gradient-to-tr from-black to-transparent"
         style={{

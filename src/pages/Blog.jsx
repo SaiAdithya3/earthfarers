@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 const links = [
   "k1Km1CDo-kc",
   "hkbc-lJPi-A",
-  "bNEgLBllE9o",
-  "x3b-nUjkrA4",
   "9ObKUYPTPXA",
   "tocWHsWUuPY",
   "XS5XH8kH-eE",
