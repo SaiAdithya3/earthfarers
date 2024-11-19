@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="absolute overflow-hidden top-0 left-0 z-[800] w-full flex items-center justify-between p-6 lg:p-10">
+      <div className="absolute overflow-hidden top-0 left-0 w-full flex items-center justify-between p-6 lg:p-10">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -128,7 +128,10 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="flex flex-col mt-16 space-y-6 text-2xl">
+          <div className="flex flex-col  space-y-6 text-2xl">
+          <Link to="/" className="w-12 h-12">
+            <img src={logo} alt="logo" className="w-full h-full" />
+          </Link>
             <Link
               to="/"
               className="text-black font-semibold uppercase hover:text-gray-600"
@@ -156,6 +159,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Blog
+            </Link>
+            <Link
+              to="/contact"
+              className="text-black font-semibold uppercase hover:text-gray-600"
+              onClick={toggleMenu}
+            >
+              Contact
             </Link>
           </div>
         </div>

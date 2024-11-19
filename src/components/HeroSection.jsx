@@ -31,7 +31,7 @@ const HeroSection = () => {
   };
   return (
     <>
-      <div className="absolute bg-black/10 top-0 left-0 transform z-[400] h-full w-full flex items-center justify-center text-9xl font-bold text-center    text-white     pointer-events-none select-none">
+      <div className="absolute bg-black/10 top-0 left-0 transform h-full w-full flex items-center justify-center text-9xl font-bold text-center    text-white     pointer-events-none select-none">
         <img className="md:flex hidden invert w-8/12" src={svg} alt=""/>
         <motion.h1
           initial={{ y: 100, opacity: 0 }}
@@ -42,7 +42,7 @@ const HeroSection = () => {
           EARTH FARERS EXIM
         </motion.h1>
       </div>
-      <div className="w-full relative overflow-hidden z-[300] flex items-center justify-center">
+      <div className="w-full relative overflow-hidden  flex items-center justify-center">
         {/* Navbar */}
         <Navbar />
         {/* Animated Video Reveal */}

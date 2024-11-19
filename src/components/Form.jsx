@@ -20,9 +20,9 @@ const Form = ({ width }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = 'ZxE38hVwrigigRci-'; 
-    const templateID = 'your_template_id'; 
-    const userID = 'your_user_id';
+    const serviceID = 'service_0g4kkcp'; 
+    const templateID = 'template_j9qx8b9'; 
+    const userID = 'ZxE38hVwrigigRci-';
 
     emailjs
       .send(serviceID, templateID, formData, userID)

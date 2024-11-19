@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GetQuote from "../components/GetQuote";
-import person1 from "../assets/person1.jpeg";
 import person3 from "../assets/person3.jpg";
 import person4 from "../assets/person4.jpg";
 import person5 from "../assets/person5.jpg";
@@ -186,3 +185,12 @@ const About = () => {
 };
 
 export default About;
+
+
+{/* <p>Hello {{to_name}},</p>
+<p>You got a new message from {{email}}:</p>
+<p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;">Message: {{message}}</p>
+<p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;">Company: {{compnay}}</p>
+<p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;">Product: {{product}}</p>
+<p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;">Quantity: {{quantity}}</p>
+<p>Best wishes,<br>Earth Farers Exim</p> */}
