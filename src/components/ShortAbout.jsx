@@ -14,7 +14,7 @@ const ShortAbout = () => {
           </h2>
           <p className="text-gray-600 w-10/12 mont text-start text-lg md:text-xl leading-relaxed">
             At Earth Farers EXIM, we specialize in providing high-quality
-            products from trusted suppliers worldwide. With a commitment to
+            products from trusted manufacturers worldwide. With a commitment to
             excellence and transparent practices, we meet international
             standards in every trade. Our team’s expertise and dedication allow
             us to adapt to market needs, ensuring timely and reliable solutions

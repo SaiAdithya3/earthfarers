@@ -35,12 +35,12 @@ const people = [
   },
   {
     name: "Darpan",
-    role: "Project Manager",
+    role: "Product Manager",
     image: person2,
     desc: "Ensures product quality and timely delivery for customer satisfaction.",
   },
   {
-    name: "Vrjesh",
+    name: "Vrajesh",
     role: "Performance Analyst",
     image: person4,
     desc: "Analyzes data to guide strategic decisions and maintain market edge.",
