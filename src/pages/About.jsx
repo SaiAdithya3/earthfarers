@@ -7,6 +7,7 @@ import person1 from "../assets/person1.jpeg";
 import person3 from "../assets/person3.jpg";
 import person4 from "../assets/person4.jpg";
 import person5 from "../assets/person5.jpg";
+import person7 from "../assets/person7.jpg";
 import person6 from "../assets/person6.jpeg";
 import blue from "../assets/blue.png";
 import { IoDiamondOutline } from "react-icons/io5";
@@ -24,7 +25,7 @@ const people = [
   {
     name: "Christian Joy",
     role: "Chief Operating Officer",
-    image: person1,
+    image: person7,
     desc: "Oversees operations, driving innovation and seamless workflows.",
   },
   {
