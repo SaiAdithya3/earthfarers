@@ -18,37 +18,32 @@ const people = [
   {
     name: "Christian Meena Edmand",
     role: "Chief Executive Officer",
-    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
-    desc: "",
     image: person3,
+    desc: "Visionary leader steering strategic growth and global excellence.",
   },
   {
     name: "Christian Joy",
     role: "Chief Operating Officer",
     image: person1,
-    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
-    desc: "Christian Joy plays a critical role in overseeing the day-to-day operations at Earth Farers EXIM. He is responsible for refining internal processes, ensuring the company’s strategic objectives are met with precision. Joy consistently brings fresh, innovative solutions that streamline workflows, manage complex international markets, and maintain rigorous risk assessments. His leadership is key in guaranteeing smooth and secure shipment operations, enabling the company to excel in global trade.",
+    desc: "Oversees operations, driving innovation and seamless workflows.",
   },
   {
     name: "Arumai Selvam",
     role: "Contract Manager",
     image: person5,
-    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
-    desc: "Arumai Selvam is pivotal in managing the contract lifecycle at Earth Farers EXIM. He meticulously oversees each agreement, ensuring that all terms and conditions are strictly followed. Arumai works closely with international clients, verifying that all regulatory and compliance standards are met before finalizing any contract. His attention to detail guarantees that agreements are accurate, fair, and fully compliant, safeguarding both the company’s interests and client satisfaction."
+    desc: "Manages contracts with precision, ensuring compliance and accuracy.",
   },
   {
     name: "Darpan",
     role: "Project Manager",
     image: person2,
-    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
-    desc: "Darpan is dedicated to maintaining the highest standards of quality at Earth Farers EXIM. He is responsible for defining the product vision, strategy, and roadmap, ensuring that each product aligns with the company’s goals and meets market demands. When it’s time to pack your order, Darpan meticulously oversees the process, guaranteeing that the correct product reaches our customers every time. His commitment ensures that we consistently deliver top-quality products that meet our clients' expectations.",
+    desc: "Ensures product quality and timely delivery for customer satisfaction.",
   },
   {
     name: "Vrjesh",
-    role: "Performace analyst",
+    role: "Performance Analyst",
     image: person4,
-    borderClass: "md:border-b md:border-r border-b md:rounded-br-3xl ",
-    desc: "Vrajesh is crucial to Earth Farers EXIM, conducting in-depth market research and data analysis to guide strategic decisions. His expertise helps the company stay competitive and responsive to client needs, ensuring that actions are data-driven and aligned with market trends.",
+    desc: "Analyzes data to guide strategic decisions and maintain market edge.",
   },
 ];
 
@@ -141,32 +136,27 @@ const About = () => {
       {/* Leadership Team Section */}
       <section className="w-full py-16 px-6 xl:px-20 ">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold w-full text-start intern mb-2">
-            Meet Our Team
-          </h2>
-          <p className="text-start w-full mb-10">
-            Our team is made up of seasoned professionals with years of
-            experience in import-export, logistics, finance, and marketing. We
-            are dedicated to providing you with the best services and solutions
-            to help your business grow and thrive.
+          <h2 className="text-4xl font-semibold mb-2 intern">Meet Our Team</h2>
+          <p className="text-center mb-8 text-md">
+            Meet the brilliant minds behind our success, driving innovation and
+            excellence every step of the way.
           </p>
-          <div className="flex flex-wrap items- justify- gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {people.map((person, index) => (
               <div
                 key={index}
-                className={`flex relative w-full cursor-pointer shadow-lg md:w-[47%] lg:w-[30%] flex-col items-center text-center border-[#064185] rounded-2xl `}
+                className="flex flex-col items-center border-2 border-[#dadada] hover:border-[#f1ede6] cursor-pointer rounded-3xl p-6 hover:shadow-xl transition-all duration-300"
               >
                 <img
                   src={person.image}
                   alt={person.name}
-                  className="h-96 w-full rounded-3xl object-cover"
+                  className="h-40 w-40 rounded-full object-cover mb-4"
                 />
-                <div className="absolute top-0 w-full h-full bg-gradient-to-t rounded-3xl from-black/60 to-transparent left-0 p-4 flex flex-col gap-1 justify-end items-center">
-                  <h3 className="text-2xl intern text-start font-semibold text-gray-200">
-                    {person.name}
-                  </h3>
-                  {/* <p className="text-gray-600">{person.role}</p> */}
-                </div>
+                <h3 className="text-xl intern font-semibold text-gray-900">
+                  {person.name}
+                </h3>
+                <p className="text-sm bluet font-medium">{person.role}</p>
+                <p className="text-gray-600 mt-3 text-center">{person.desc}</p>
               </div>
             ))}
           </div>
@@ -176,9 +166,9 @@ const About = () => {
       <div className="w-full quote">
         <section className="w-full py-16 px-6 xl:px-20  text-black">
           <div className="max-w-6xl mx-auto text-center relative">
-            <RiDoubleQuotesL className="absolute text-4xl -top-4 -left-1" />
-            <RiDoubleQuotesL className="absolute text-4xl bottom-4 scale-[-1] right-[24%]" />
-            <h2 className="text-4xl text-gray-500 leading-normal intern font- mb-4">
+            <RiDoubleQuotesL className="absolute text-4xl -top-4 -left-4 md:-left-1" />
+            <RiDoubleQuotesL className="absolute text-4xl bottom-0 md:bottom-4 scale-[-1] -right-4 md:right-[24%]" />
+            <h2 className="text-2xl md:text-4xl text-gray-500 leading-normal intern font- mb-4">
               Time is essential in the export business, which is why at{" "}
               <span className="bluet font-semibold">Earth Farers EXIM</span>, we
               are dedicated to completing every job on schedule, without

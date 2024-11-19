@@ -45,3 +45,36 @@ body {
 .bluet {
   color: #064185;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer;
+}
+::-webkit-scrollbar:hover{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  background: #064185;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a5ead;
+  cursor: pointer;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}

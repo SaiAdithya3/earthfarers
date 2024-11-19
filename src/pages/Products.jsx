@@ -63,7 +63,7 @@ const Products = () => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className="relative w-full md:w-[45%] lg:w-[48%] flex border border-black/10 rounded-3xl cursor-pointer hover:bg-zinc-400/10 transition-all overflow-hidden transform h"
+            className="relative w-full group md:w-[45%] lg:w-[48%] flex border border-black/10 rounded-3xl cursor-pointer hover:bg-zinc-400/10 transition-all overflow-hidden transform h"
             onClick={() => handleCategoryClick(category)}
           >
             <img
@@ -79,7 +79,7 @@ const Products = () => {
                 <p className="text-gray-200 ">{category.description}</p>
               </div>
               <div className="h-full flex items-end justify-end p-3">
-                <MdArrowOutward className="text-2xl text-white " />
+                <MdArrowOutward className="text-5xl group-hover:bg-white group-hover:text-black transition-all ease-in duration-150 p-2 text-white bg-transparent border border-white rounded-full" />
               </div>
             </div>
           </div>
@@ -94,8 +94,8 @@ const Products = () => {
           transition={{ duration: 0.5 }}
           className="fixed inset-0 bg-black/50 flex items-center justify-center"
         >
-          <div className="bg-[#f1ede6] p-8 rounded-xl h-4/5 w-11/12 overflow-y-scroll max-w-4xl">
-            <div className="flex justify-between items-center mb-4">
+          <div className="bg-[#f1ede6] pb-8 relative  h-4/5 w-11/12 overflow-y-scroll max-w-4xl">
+            <div className="flex sticky top-0 pt-8 px-8 left-0 w-full bg-[#f1ede6] justify-between items-center mb-4">
               <h2 className="text-3xl intern font-semibold">
                 {selectedCategory.title}
               </h2>
@@ -107,17 +107,18 @@ const Products = () => {
               </button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 px-8 md:grid-cols-2 gap-6">
               {selectedCategory.products.map((product, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 p-4 rounded-xl flex flex-col items-center gap-4"
+                  className="border hover:bg-[#eae1d0] hover:shadow-lg hover:border-[#eae1d0] transition-all duration-150 ease-in cursor-pointer border-gray-200 p-4 rounded-2xl flex flex-col items-center gap-4"
                 >
                   <img
                     src={product.imageUrl}
                     alt={product.name}
-                    className="w-full h-40 object-cover rounded-xl"
+                    className="w-full h-60 object-cover rounded-xl"
                   />
+                  
                   <h3 className="text-xl font-semibold">{product.name}</h3>
                   <p className="text-gray-600 text-center">
                     {product.description}
@@ -125,8 +126,9 @@ const Products = () => {
                   <a
                     href={product.downloadUrl}
                     download
-                    className="bg-blue-600 text-white py-2 px-4 rounded-xl mt-4 hover:bg-blue-700"
+                    className="bluex flex items-center gap-1 text-white py-2 px-6 rounded-xl mt-4"
                   >
+                    <MdOutlineFileDownload className="text-2xl" />
                     Download
                   </a>
                 </div>

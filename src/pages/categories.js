@@ -12,35 +12,35 @@ const categories = [
           name: "Banana",
           description: "Fresh and ripe bananas.",
           imageUrl:
-            "https://images.pexels.com/photos/40831/pexels-photo-40831.jpeg",
+            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/banana.pdf",
         },
         {
           name: "Pomegranates",
           description: "Fresh pomegranates rich in nutrients.",
           imageUrl:
-            "https://images.pexels.com/photos/758757/pexels-photo-758757.jpeg",
+            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/pomegranates.pdf",
         },
         {
           name: "Pineapple",
           description: "Sweet and tangy pineapples.",
           imageUrl:
-            "https://images.pexels.com/photos/1091742/pexels-photo-1091742.jpeg",
+            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/pineapple.pdf",
         },
         {
           name: "Mango",
           description: "Sweet mangoes from the tropical region.",
           imageUrl:
-            "https://images.pexels.com/photos/41125/pexels-photo-41125.jpeg",
+            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/mango.pdf",
         },
         {
           name: "Jackfruit",
           description: "Large jackfruit with a sweet flavor.",
           imageUrl:
-            "https://images.pexels.com/photos/4320544/pexels-photo-4320544.jpeg",
+            "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/jackfruit.pdf",
         },
       ],
@@ -56,28 +56,27 @@ const categories = [
           name: "Garlic",
           description: "Fresh organic garlic cloves.",
           imageUrl:
-            "https://images.pexels.com/photos/2790304/pexels-photo-2790304.jpeg",
+            "https://images.pexels.com/photos/2790304/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/garlic.pdf",
         },
         {
           name: "Onion",
           description: "Fresh red onions for all your recipes.",
           imageUrl:
-            "https://images.pexels.com/photos/723177/pexels-photo-723177.jpeg",
+            "https://images.pexels.com/photos/723177/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/onion.pdf",
         },
         {
           name: "Tomato",
           description: "Juicy tomatoes perfect for cooking.",
           imageUrl:
-            "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg",
+            "https://images.pexels.com/photos/1181676/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/tomato.pdf",
         },
         {
           name: "Cucumber",
           description: "Fresh cucumbers, perfect for salads.",
-          imageUrl:
-            "https://images.pexels.com/photos/974864/pexels-photo-974864.jpeg",
+           imageUrl: "https://images.pexels.com/photos/974864/pexels-photo-1132047.jpeg",
           downloadUrl: "/downloads/cucumber.pdf",
         },
       ],
@@ -93,28 +92,28 @@ const categories = [
           name: "Garlic Powder",
           description: "100% pure garlic powder.",
           imageUrl:
-            "https://images.pexels.com/photos/1126597/pexels-photo-1126597.jpeg",
+            "https://images.pexels.com/photos/1126597/pexels-photo-7956503.jpeg",
           downloadUrl: "/downloads/garlic-powder.pdf",
         },
         {
           name: "Banana Powder",
           description: "Natural banana powder for smoothies.",
           imageUrl:
-            "https://images.pexels.com/photos/5055660/pexels-photo-5055660.jpeg",
+            "https://images.pexels.com/photos/5055660/pexels-photo-7956503.jpeg",
           downloadUrl: "/downloads/banana-powder.pdf",
         },
         {
           name: "Guar Gum Powder",
           description: "High-quality guar gum powder for culinary use.",
           imageUrl:
-            "https://images.pexels.com/photos/6701762/pexels-photo-6701762.jpeg",
+            "https://images.pexels.com/photos/6701762/pexels-photo-7956503.jpeg",
           downloadUrl: "/downloads/guar-gum-powder.pdf",
         },
         {
           name: "Jackfruit Powder",
           description: "Organic jackfruit powder for various recipes.",
           imageUrl:
-            "https://images.pexels.com/photos/3461079/pexels-photo-3461079.jpeg",
+            "https://images.pexels.com/photos/3461079/pexels-photo-7956503.jpeg",
           downloadUrl: "/downloads/jackfruit-powder.pdf",
         },
       ],
@@ -130,14 +129,14 @@ const categories = [
           name: "Green Tea",
           description: "Fresh green tea leaves from the best sources.",
           imageUrl:
-            "https://images.pexels.com/photos/1028325/pexels-photo-1028325.jpeg",
+            "https://images.pexels.com/photos/1028325/pexels-photo-7956503.jpeg",
           downloadUrl: "/downloads/green-tea.pdf",
         },
         {
           name: "Black Tea",
           description: "A rich and bold black tea for every occasion.",
           imageUrl:
-            "https://images.pexels.com/photos/6279076/pexels-photo-6279076.jpeg",
+            "https://images.pexels.com/photos/6279076/pexels-photo-7956503.jpeg",
           downloadUrl: "/downloads/black-tea.pdf",
         },
       ],
@@ -153,14 +152,14 @@ const categories = [
           name: "Raw Cotton",
           description: "High-quality raw cotton for textile production.",
           imageUrl:
-            "https://images.pexels.com/photos/3791256/pexels-photo-3791256.jpeg",
+            "https://images.pexels.com/photos/3791256/pexels-photo-13276484.jpeg",
           downloadUrl: "/downloads/raw-cotton.pdf",
         },
         {
           name: "Cotton Waste",
           description: "Cotton waste for recycling and other uses.",
           imageUrl:
-            "https://images.pexels.com/photos/4590725/pexels-photo-4590725.jpeg",
+            "https://images.pexels.com/photos/4590725/pexels-photo-13276484.jpeg",
           downloadUrl: "/downloads/cotton-waste.pdf",
         },
       ],
@@ -174,22 +173,19 @@ const categories = [
         {
           name: "Plastic Films",
           description: "High-quality plastic films for various industries.",
-          imageUrl:
-            "https://images.pexels.com/photos/1573578/pexels-photo-1573578.jpeg",
+          imageUrl: plasticsheets, 
           downloadUrl: "/downloads/plastic-films.pdf",
         },
         {
           name: "Raw Plastic Materials",
           description: "Raw plastic materials for manufacturing.",
-          imageUrl:
-            "https://images.pexels.com/photos/1270287/pexels-photo-1270287.jpeg",
+          imageUrl: plasticsheets,
           downloadUrl: "/downloads/raw-plastic-materials.pdf",
         },
         {
           name: "Optical Fibers",
           description: "High-performance optical fibers for telecommunications.",
-          imageUrl:
-            "https://images.pexels.com/photos/1192059/pexels-photo-1192059.jpeg",
+          imageUrl: plasticsheets,
           downloadUrl: "/downloads/optical-fibers.pdf",
         },
       ],
