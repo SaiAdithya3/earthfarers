@@ -132,6 +132,7 @@ const Products = () => {
                   >
                     <MdOutlineFileDownload className="text-2xl" />
                     Download PDF
+                    {/* {product.downloadUrl} */}
                   </a>
                 </div>
               ))}

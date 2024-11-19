@@ -18,9 +18,28 @@ import jackfruitPowder from "../assets/products/jackfruitpowder.png";
 import tealeaf from "../assets/products/tealeaf.avif";
 import rawCotton from "../assets/products/cotton.jpeg";
 import cottonWaste from "../assets/products/cottonwaste.jpg";
-import plasticFilm from "../assets/products/plasticfilm.pdf";
-import rawPlastic from "../assets/products/rawplastic.pdf";
-import opticalFiber from "../assets/products/opticalfibre.pdf";
+import rawPlastic from "../assets/products/plasticraw.jpg";
+import opticalFiber from "../assets/products/fiberoptics.jpg";
+
+//pdf files
+import bananaPdf from "../assets/products/banana.pdf";
+import pomegranatesPdf from "../assets/products/promograntes.pdf";
+import pineapplePdf from "../assets/products/pineapple.pdf";
+import mangoesPdf from "../assets/products/mangoes.pdf";
+import jackfruitPdf from "../assets/products/jackfruit.pdf";
+import garlicPdf from "../assets/products/garlic.pdf";
+import onionsPdf from "../assets/products/onions.pdf";
+import garlicPowderPdf from "../assets/products/garlicpowder.pdf";
+import bananaPowderPdf from "../assets/products/bananapowder.pdf";
+import guarGumPowderPdf from "../assets/products/gargumpowder.pdf";
+import jackfruitPowderPdf from "../assets/products/jackfruitpowder.pdf";
+import teaPdf from "../assets/products/tea.pdf";
+import rawCottonPdf from "../assets/products/rawcotton.pdf";
+import cottonWastePdf from "../assets/products/cottonwaste.pdf";
+import plasticFilmPdf from "../assets/products/plasticfilm.pdf";
+import rawPlasticPdf from "../assets/products/rawplastic.pdf";
+import opticalFiberPdf from "../assets/products/opticalfibre.pdf";
+
 
 const categories = [
   {
@@ -33,31 +52,31 @@ const categories = [
         name: "Banana",
         description: "Fresh and ripe bananas.",
         imageUrl: banana,
-        downloadUrl: "src/assets/products/banana.pdf",
+        downloadUrl: bananaPdf,
       },
       {
         name: "Pomegranates",
         description: "Fresh pomegranates rich in nutrients.",
         imageUrl: pomegranate,
-        downloadUrl: "src/assets/products/promograntes.pdf",
+        downloadUrl: pomegranatesPdf,
       },
       {
         name: "Pineapple",
         description: "Sweet and tangy pineapples.",
         imageUrl: pineapple,
-        downloadUrl: "src/assets/products/pineapple.pdf",
+        downloadUrl: pineapplePdf,
       },
       {
         name: "Mango",
         description: "Sweet mangoes from the tropical region.",
         imageUrl: mangoes,
-        downloadUrl: "src/assets/products/mangoes.pdf",
+        downloadUrl: mangoesPdf,
       },
       {
         name: "Jackfruit",
         description: "Large jackfruit with a sweet flavor.",
         imageUrl: jackfruit,
-        downloadUrl: "src/assets/products/jackfruit.pdf",
+        downloadUrl: jackfruitPdf,
       },
     ],
   },
@@ -71,13 +90,13 @@ const categories = [
         name: "Garlic",
         description: "Fresh organic garlic cloves.",
         imageUrl: garlic,
-        downloadUrl: "src/assets/products/garlic.pdf",
+        downloadUrl: garlicPdf,
       },
       {
         name: "Onion",
         description: "Fresh red onions for all your recipes.",
         imageUrl: onions,
-        downloadUrl: "src/assets/products/onions.pdf",
+        downloadUrl: onionsPdf,
       },
     ],
   },
@@ -91,25 +110,25 @@ const categories = [
         name: "Garlic Powder",
         description: "100% pure garlic powder.",
         imageUrl: garlicPowder,
-        downloadUrl: "src/assets/products/garlicpowder.pdf",
+        downloadUrl: garlicPowderPdf,
       },
       {
         name: "Banana Powder",
         description: "Natural banana powder for smoothies.",
         imageUrl: bananaPowder,
-        downloadUrl: "src/assets/products/bananapowder.pdf",
+        downloadUrl: bananaPowderPdf,
       },
       {
         name: "Guar Gum Powder",
         description: "High-quality guar gum powder for culinary use.",
         imageUrl: guarGumPowder,
-        downloadUrl: "src/assets/products/gargumpowder.pdf",
+        downloadUrl: guarGumPowderPdf,
       },
       {
         name: "Jackfruit Powder",
         description: "Organic jackfruit powder for various recipes.",
         imageUrl: jackfruitPowder,
-        downloadUrl: "src/assets/products/jackfruitpowder.pdf",
+        downloadUrl: jackfruitPowderPdf,
       },
     ],
   },
@@ -123,13 +142,13 @@ const categories = [
         name: "Green Tea",
         description: "Fresh green tea leaves from the best sources.",
         imageUrl: tealeaf,
-        downloadUrl: "src/assets/products/tea.pdf",
+        downloadUrl: teaPdf,
       },
       {
         name: "Black Tea",
         description: "A rich and bold black tea for every occasion.",
         imageUrl: tealeaf,
-        downloadUrl: "src/assets/products/tea.pdf",
+        downloadUrl: teaPdf,
       },
     ],
   },
@@ -143,13 +162,13 @@ const categories = [
         name: "Raw Cotton",
         description: "High-quality raw cotton for textile production.",
         imageUrl: rawCotton,
-        downloadUrl: "src/assets/products/rawcotton.pdf",
+        downloadUrl: rawCottonPdf,
       },
       {
         name: "Cotton Waste",
         description: "Cotton waste for recycling and other uses.",
         imageUrl: cottonWaste,
-        downloadUrl: "src/assets/products/cottonwaste.pdf",
+        downloadUrl: cottonWastePdf,
       },
     ],
   },
@@ -163,19 +182,19 @@ const categories = [
         name: "Plastic Films",
         description: "High-quality plastic films for various industries.",
         imageUrl: plasticsheets,
-        downloadUrl: plasticFilm,
+        downloadUrl: plasticFilmPdf,
       },
       {
         name: "Raw Plastic Materials",
         description: "Raw plastic materials for manufacturing.",
-        imageUrl: "src/assets/products/plasticraw.jpg",
-        downloadUrl: rawPlastic,
+        imageUrl: rawPlastic,
+        downloadUrl: rawPlasticPdf,
       },
       {
         name: "Optical Fibers",
         description: "High-performance optical fibers for telecommunications.",
-        imageUrl: "src/assets/products/fiberoptics.jpg",
-        downloadUrl: opticalFiber,
+        imageUrl: opticalFiber,
+        downloadUrl: opticalFiberPdf,
       },
     ],
   },
