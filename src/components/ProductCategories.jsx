@@ -183,7 +183,7 @@ const ProductCategories = () => {
         <button
           onClick={handleToggle}
           className={`mt-16 text-black intern rounded-full py-6 group font-semibold transition-all relative duration-300
-          ${showAll ? "p-4 md:p-5" : "md:p-4 p-3"}
+          ${showAll ? "p-5" : "p-4 "}
             `}
         >
           <span className="relative z-10">

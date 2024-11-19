@@ -31,18 +31,18 @@ const HeroSection = () => {
   };
   return (
     <>
-      <div className="absolute bg-black/10 top-0 left-0 transform z-[900] h-full w-full flex items-center justify-center text-9xl font-bold text-center    text-white     pointer-events-none select-none">
-        {/* <img className="    invert   " src={svg} alt="" /> */}
+      <div className="absolute bg-black/10 top-0 left-0 transform z-[400] h-full w-full flex items-center justify-center text-9xl font-bold text-center    text-white     pointer-events-none select-none">
+        <img className="md:flex hidden invert " src={svg} alt="" />
         <motion.h1
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 2 }}
-          className="w-8/12 text-6xl md:text-8xl int text-center font-semibold"
+          className="w-8/12 flex md:hidden text-6xl md:text-8xl int text-center font-semibold"
         >
           EARTH FARERS EXIM
         </motion.h1>
       </div>
-      <div className="w-full relative overflow-hidden z-[800] flex items-center justify-center">
+      <div className="w-full relative overflow-hidden z-[300] flex items-center justify-center">
         {/* Navbar */}
         <Navbar />
         {/* Animated Video Reveal */}

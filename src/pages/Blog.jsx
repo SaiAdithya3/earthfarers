@@ -6,9 +6,13 @@ import { motion } from "framer-motion";
 const links = [
   "k1Km1CDo-kc",
   "hkbc-lJPi-A",
-  "WlG7u35of5c",
   "bNEgLBllE9o",
   "x3b-nUjkrA4",
+  "9ObKUYPTPXA",
+  "tocWHsWUuPY",
+  "XS5XH8kH-eE",
+  "D3-KOUYFQWc",
+  "2aYw8x4So1s",
 ];
 
 const Blog = () => {

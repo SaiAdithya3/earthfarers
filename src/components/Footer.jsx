@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-col text-lg md:text-2xl uppercase font-semibold">
           <div className="flex justify-start md:justify-end items- gap-4 mb-6">
               <a
-                href="https://www.youtube.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" text-3xl transition-all"
@@ -30,7 +30,7 @@ const Footer = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://www.youtube.com"
+                href="https://www.youtube.com/@chrme21456"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" text-3xl transition-all"
@@ -38,7 +38,7 @@ const Footer = () => {
                 <FaYoutube />
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/earth-farers-exim/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl transition-all"
@@ -46,7 +46,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/earthfarers_exim?igsh=MWg4a204M2VsenZvMQ%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" text-3xl transition-all"
