@@ -28,13 +28,13 @@ const Contact = () => {
           </motion.h1>
         </div>
 
-        <p className="text-start max-w-7xl w-full mt-[100px] mb-8">
+        <p className="text-start max-w-7xl w-9/12 md:w-full mt-[100px] mb-8">
           We are here to help you with all your queries. Feel free to reach out
           to us for any assistance.
         </p>
-        <div className="max-w-7xl w-full justify-between flex items-center mb-[100px]">
+        <div className="max-w-7xl w-full justify-between p-4 md:p-0 flex flex-col md:flex-row items-center mb-[100px]">
           <div className="w-">
-            <h2 className="text-3xl  font-bold mb-4">Follow us</h2>
+            <h2 className="text-3xl font-bold mb-4">Follow us</h2>
             <div className="flex flex-col justify-start gap-4 mb-6">
              
               <a
