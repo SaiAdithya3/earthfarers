@@ -107,7 +107,7 @@ const ProductCategories = () => {
                   className="flex w-full flex-col items-center justify-center"
                 >
                   <div className="w-full flex flex-col items-center text-center rounded-lg transition-shadow duration-300">
-                    <div className="relative">
+                    <Link to="/products" className="relative">
                       <img
                         src={category.imageUrl}
                         alt={category.title}
@@ -117,7 +117,7 @@ const ProductCategories = () => {
                           borderRadius: "8px",
                         }}
                       />
-                    </div>
+                    </Link>
                     <h3 className="text-xl mt-2 intern font-semibold text-gray-700">
                       {category.title}
                     </h3>
